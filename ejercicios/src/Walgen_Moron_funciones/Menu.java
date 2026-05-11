@@ -51,7 +51,7 @@ public class Menu {
         } while (validarOp);
         
         
-        double num1,num2,num3,resultado;
+        double num1,num2,num3,num4,resultado;
         switch (op) {
             case 1:
                 System.out.print("Ingresa el primer número: ");
@@ -70,9 +70,12 @@ public class Menu {
                 num1 = in.nextDouble();
                 System.out.print("Ingresa el segundo número: ");
                 num2 = in.nextDouble();
-                System.out.println("Ingresa el tercer número: ");
+                System.out.print("Ingresa el tercer número: ");
                 num3 = in.nextDouble();
-                //resultado = opE.obtenerMayor(num1,num2,num3);
+                System.out.print("Ingresa el cuarto número: ");
+                num4 = in.nextDouble();
+                resultado = opE.obtenerMayor(num1,num2,num3,num4);
+                System.out.println("El número mayor es: " + resultado);
                 break;
             case 4:
                  double[] resultados = opG.radianes();
