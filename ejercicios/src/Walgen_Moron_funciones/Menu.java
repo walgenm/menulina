@@ -37,7 +37,7 @@ public class Menu {
              if (in.hasNextInt()){
                 op = in.nextInt();
                 if(op < 1 || op > 5){
-                    System.out.println("Opción no valida");
+                    System.out.println("Opción no valida esta fuera del rango");
                 }else{
                     validarOp = false;
                 };
@@ -52,20 +52,24 @@ public class Menu {
         
         
         double num1,num2,num3,num4,resultado;
+        System.out.println("");
         switch (op) {
             case 1:
+                System.out.println("-------------Multiplicación selectiva--------------");
                 System.out.print("Ingresa el primer número: ");
                 num1 = in.nextDouble();
                 System.out.print("Ingresa el segundo número: ");
                 num2 = in.nextDouble();
-                System.out.println("Ingresa el tercer número: ");
+                System.out.print("Ingresa el tercer número: ");
                 num3 = in.nextDouble();
                 opA.ejecutarProducto(num1 , num2,num3);
                 break;
             case 2:
+                System.out.println("------------Calcular el area y perimetro de un círculo------------");
                 opB.radio();
                 break;
             case 3:
+                System.out.println("-------------Determinar el mayor--------------");
                 System.out.print("Ingresa el primer número: ");
                 num1 = in.nextDouble();
                 System.out.print("Ingresa el segundo número: ");
@@ -78,6 +82,7 @@ public class Menu {
                 System.out.println("El número mayor es: " + resultado);
                 break;
             case 4:
+                 System.out.println("-------------Radianes de un triángulo--------------");
                  double[] resultados = opG.radianes();
                  System.out.println("\n------------------------RESULTADOS------------------------");
                  System.out.println("El Seno es: "+ resultados[0]);
@@ -85,7 +90,7 @@ public class Menu {
                  System.out.println("----------------------------------------------------------");
                 break;
             case 5:
-                
+                System.out.println("-------------Salir--------------");
                 break;
                 
         }
