@@ -1,10 +1,5 @@
 package Walgen_Moron_funciones;
 
-/**
- *
- * @author Diego medina c.i: 31.934.048
- */
-
 public class opcionA {
     // Funcion Tipo 3: Con parametros / Sin retorno
     public static void ejecutarProducto(double n1, double n2, double n3) {
