@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class opcionG {
 
     public static double[] radianes(){
-        // Funcion Tipo 4: Sin parametros / Con retorno
+        // Funcion Tipo 2: Sin parametros / Con retorno
         Scanner in = new Scanner(System.in);
         double radianes = 0, seno=0,coseno=0;
         boolean validarRadio = true;
